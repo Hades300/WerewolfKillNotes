@@ -12,6 +12,7 @@ function PlayerPage({playerNum = 10}) {
         column = 1
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_, setOperations] = useState<Operation[]>([]);
     let addOp = (op: Operation) => {
         setOperations(ops => [...ops, op])
