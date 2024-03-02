@@ -2,41 +2,6 @@ import {BadRole, CampRole, Color, GoodRole, MRole, Role} from "../../types/role"
 import {Chip} from "@mui/material";
 import "./index.css"
 
-let GoodChips = Object.values(GoodRole).map((role) => {
-    return <Chip label={role} color="primary"/>
-})
-
-
-let BadChips = Object.values(BadRole).map((role) => {
-    return <Chip label={role} color="error"/>
-})
-
-let MChips = Object.values(MRole).map((role) => {
-    return <Chip label={role} color="warning"/>
-})
-
-function CampRoleChipForShow({
-                                 role,
-                                 handleAddRole,
-                             }: {
-    role: Role,
-    handleAddRole: (arg0: Role) => void,
-}) {
-
-    return <Chip
-        label={role}
-        color={getColor(role)}
-        style={{
-            "scale": "200%"
-        }}
-        onClick={(e) => {
-            e.stopPropagation()
-            if (handleAddRole) {
-                handleAddRole(role)
-            }
-        }}/>
-}
-
 function getColor(role: Role) {
     let color: Color = "primary"
     if (Object.values(MRole).includes(role as MRole) || role === CampRole.ZL) {

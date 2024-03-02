@@ -1,14 +1,8 @@
 import PersonCard from "../../compoments/personCard";
 import "./index.css"
 import {Operation} from "../../types/role";
-import {ReactNode, useState} from "react";
+import {useState} from "react";
 import {useMediaQuery} from "@mui/material";
-
-
-type PlayContainerProps = {
-    playerNum?: number;
-    children: ReactNode;
-};
 
 
 function PlayerPage({playerNum = 10}) {
@@ -18,7 +12,7 @@ function PlayerPage({playerNum = 10}) {
         column = 1
     }
 
-    const [operations, setOperations] = useState<Operation[]>([]);
+    const [_, setOperations] = useState<Operation[]>([]);
     let addOp = (op: Operation) => {
         setOperations(ops => [...ops, op])
     }
