@@ -1,11 +1,11 @@
 enum GoodRole {
     PM = "平民",
-    JZ = "警长",
+    JZ = "警长🔫",
     TPG = "调皮鬼",
-    ZT = "侦探",
-    ZCR = "主持人",
-    YS = "勇士",
-    ZXS = "占星师",
+    ZT = "侦探🔍",
+    ZCR = "主持人🎤",
+    YS = "勇士🔪",
+    ZXS = "占星师⭐️",
     TS = "天使😇",
     SZ = "哨子"
 }
@@ -21,7 +21,8 @@ enum BadRole {
     LR = "狼人",
     ZDL = "炸弹狼💣",
     QXL = "潜行狼",
-    DL = "独狼"
+    DL = "独狼",
+    CKL = "刺客狼",
 }
 
 enum CampRole {
