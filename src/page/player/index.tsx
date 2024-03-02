@@ -35,7 +35,7 @@ function PlayerPage({playerNum = 10}) {
             <div style={{
                 display: "grid",
                 width: "100%",
-                minWidth: "300px",
+                minWidth: "100px",
                 columnGap: "0.5rem",
                 rowGap: ".25rem",
                 gridTemplateColumns: `repeat(${column},1fr)`

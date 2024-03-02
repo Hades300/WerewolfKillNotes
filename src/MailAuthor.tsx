@@ -1,21 +1,21 @@
-function Author(
-    {xiaohongshu}: { xiaohongshu: string } = {xiaohongshu: "6512f3a6000000002401676b"}
+function MailAuthor(
+    {mail}: { mail: string } = {mail: "dovexiaoxiami@163.com"}
 ) {
-    let url = `https://www.xiaohongshu.com/user/profile/${xiaohongshu}`
+    let url = `mailto:${mail}`
     return <section>
         <div>
             <a href={url} style={{
                 display: "inline-block",
                 padding: "0.25rem .5rem",
                 borderRadius: ".3rem",
-                background: "red",
+                background: "black",
                 color: "white",
                 fontWeight: "400",
                 textDecoration: "none"
-            }}>作者小红书🍠</a>
+            }}>作者邮箱📮</a>
         </div>
     </section>
 }
 
 
-export default Author;
+export default MailAuthor;
